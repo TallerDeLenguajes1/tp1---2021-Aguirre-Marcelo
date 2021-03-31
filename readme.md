@@ -2,6 +2,7 @@
 
 **Investigar el archivo .gitignore**
 
+1)
 - ¿Por qué es conveniente incluirlo?
 
  .gitignore es conveniente incluirlo para ignorar archivos o carpetas enteras de nuestro sistema.
@@ -18,5 +19,24 @@
 
 - ¿Cómo configuraría el archivo _.gitignore_?
 
- en este caso solamente tendriamos que hacer que ignore la carpeta .vscode ya que la necesitamos para usar el visual studio pero no queremos que la controle.
+ en este caso tendriamos que hacer que ignore la carpeta .vscode ya que la necesitamos para usar el visual studio pero no queremos que la controle.
  dentro del archivo .gitignore tenemos que poner .vscode/
+ Tambien copiar y pegar el codigo generado por la pagina gitignore con los parametros windows y C.
+
+ 2)
+  Si resolvió correctamente los puntos ii y iii notará que el resultado es el mismo. 
+
+  ¿a qué se debe?
+
+    el punto 3 da la direccion de memoria de la variable y el punto 2 muestra la dirección de memoria almacenada por el puntero sobre esa variable
+
+  ¿Qué obtiene en el punto 4?
+
+    optiene la dirección de memoria del puntero (por lo cual no es contenido si no su espacio fisico)
+
+  ¿es igual a los anteriores? ¿por qué?
+
+    No, porque el puntero tiene su propio espasio fisico (direcion) y hay guarda como su contenido la direccion de la variable
+
+
+
