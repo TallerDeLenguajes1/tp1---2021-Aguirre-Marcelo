@@ -11,7 +11,7 @@ int main() {
     printf("La direccion de memoria del puntero: %u \n", &p ); 
     printf("tamano de memoria utilizado por esa variable: %d \n", sizeof(i));   
 
-    system("pause");
+    
     
     return 0;
     
