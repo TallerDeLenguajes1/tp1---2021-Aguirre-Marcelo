@@ -6,9 +6,9 @@ void tipovoid( int *numero); // punto b
 
 void muestre(int *numero); //punto c
 
-void invertir(int *ParametroA , int *parametroB); //punto d - f
+void invertir(int *ParametroA , int *parametroB); //punto d 
 
-void orden(int *Parametroa , int *parametrob); //punto e - f
+void orden(int *Parametroa , int *parametrob); //punto e 
 
 int main() {
     int variable, parametroA , parametroB, parametroa , parametrob ;
@@ -22,7 +22,7 @@ int main() {
     numero = cuadrado(variable);
     printf("El cuadrado del numero: %d\n", numero);
     printf("---------------------\n");
-    tipovoid(&variable);
+    tipovoid(&variable); //muestra el contenido de la variable (ya modificado por el punto anterior)
     printf("El cuadrado del numero-(void): %d\n", variable);
     printf("---------------------\n");
     muestre(&variable);
@@ -34,9 +34,8 @@ int main() {
     scanf("%d", &parametroB);
     printf("---------------------\n");
 
-    invertir(&parametroA , &parametroB);
-    printf("valor invertido del parametroA: %d\n", parametroA);
-    printf("valor invertido del parametroB: %d\n", parametroB);
+    invertir(&parametroA , &parametroB); 
+    printf("valor invertido del parametroA: %d\nvalor invertido del parametroB: %d\n", parametroA,parametroB);
     printf("---------------------\n");
     printf("ingrese 2 valores\nPrimer valor: ");
     scanf("%d", &parametroa);
@@ -44,8 +43,7 @@ int main() {
     scanf("%d", &parametrob);
     printf("---------------------\n");
     orden( &parametroa ,  &parametrob);
-    printf("orden1 (valor mas chicos): %d\n", parametroa);
-    printf("orden2 (valor mas grande): %d\n", parametrob);
+    printf("orden1 (valor mas chicos): %d\norden2 (valor mas grande): %d\n", parametroa, parametrob);
    
     return 0;
 }
@@ -53,15 +51,11 @@ int main() {
 int cuadrado( int numero){
 
     return(numero * numero);
-
 }
 
 void tipovoid (int *numero){
 
-    
-
-     *numero*= *numero ;
-      
+     *numero*= *numero ;      
 }
 
 void muestre(int *numero){
@@ -76,17 +70,13 @@ void invertir(int *parametroA , int *parametroB){
 
     aux = *parametroA;
     *parametroA = *parametroB;
-    *parametroB = aux;
-    
+    *parametroB = aux;   
 }
 
 void orden(int *parametroa , int *parametrob){
-
 
     if (*parametroa > *parametrob)
     {
         invertir( parametroa , parametrob);
     }
-    
-
 }
